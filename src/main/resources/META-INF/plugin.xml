@@ -15,4 +15,15 @@
     <applicationListeners>
         <listener class="com.github.sundyloveme.msgpackviewer.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>
     </applicationListeners>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="UnpackAction"
+                class="com.github.sundyloveme.msgpackviewer.services.MsgpackData"
+                text="Unpack"
+                description="Unpack the selected file">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
+
 </idea-plugin>
