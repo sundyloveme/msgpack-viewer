@@ -1,4 +1,4 @@
-package com.github.sundyloveme.msgpackviewer.services
+package com.github.sundyloveme.msgpackviewer
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent

@@ -1,25 +1,25 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.sundyloveme.msgpackviewer</id>
-    <name>msgpack-viewer Template</name>
+    <name>msgpack-viewer</name>
     <vendor>sundyloveme</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.sundyloveme.msgpackviewer.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
+<!--    <extensions defaultExtensionNs="com.intellij">-->
+<!--        <toolWindow factoryClass="com.github.sundyloveme.msgpackviewer.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>-->
+<!--    </extensions>-->
 
-    <applicationListeners>
-        <listener class="com.github.sundyloveme.msgpackviewer.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>
-    </applicationListeners>
+<!--    <applicationListeners>-->
+<!--        <listener class="com.github.sundyloveme.msgpackviewer.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>-->
+<!--    </applicationListeners>-->
 
     <actions>
         <!-- Add your actions here -->
         <action id="UnpackAction"
-                class="com.github.sundyloveme.msgpackviewer.services.MsgpackData"
+                class="com.github.sundyloveme.msgpackviewer.MsgpackData"
                 text="Unpack"
                 description="Unpack the selected file">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
